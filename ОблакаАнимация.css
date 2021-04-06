@@ -1,0 +1,152 @@
+body {margin: 0;}
+.header {opacity:.5;
+  width: 100%;
+  height: 100vh;
+  background-color: skyblue;
+  background-image:     
+    url(https://www.flaticon.com/svg/static/icons/svg/1163/1163624.svg),
+     url(https://www.flaticon.com/svg/static/icons/svg/1163/1163624.svg),
+     url(https://www.flaticon.com/svg/static/icons/svg/1163/1163624.svg),
+    url(https://www.flaticon.com/svg/static/icons/svg/166/166015.svg),
+     url(https://www.flaticon.com/svg/static/icons/svg/166/166015.svg),
+     url(https://www.flaticon.com/svg/static/icons/svg/166/166015.svg),
+    
+    url(https://www.flaticon.com/svg/static/icons/svg/166/166015.svg),
+    url(https://www.flaticon.com/svg/static/icons/svg/166/166015.svg);
+    
+  background-size: 100px, 200px, 100px, 50px, 200px, 70px, 300px, 30px;
+  background-repeat: no-repeat;
+  background-position-y: 600px, 200px, 50px, 450px, 500px, 100px, 150px, 250px;
+  background-position-x: 0;
+  animation: clouds 15s linear infinite alternate;
+}
+
+@keyframes clouds {
+  0% {
+     background-position-x: -50px, 1700px, -500px, 1800px, -400px, 1800px,-300px,-150px;
+  }
+  100% {
+     background-position-x: 1700px, -400px, 1700px, -500px, 1800px, -500px, 1900px,1600px;
+  }}
+
+body{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 800% 800%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}}
+
+.khopka {
+  width: 150px;
+  height: 120px;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  background-color: fuchsia;  
+  font-size: 20px;
+  font-weight:bold;    
+  text-align: center;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  border: 5px solid orange;
+  outline: none;}
+
+  a {text-decoration: none;
+  color: greenyellow;}
+
+.khopka:hover {
+  cursor: pointer;
+  /*border: 5px solid green;*/
+}
+
+.ptihka {position: absolute;
+    width: 150px;
+    animation: bird 3s linear 0s both infinite;}
+
+@keyframes bird
+{0% {left: -150px; top: 100px;}
+50% {left: 700px; top: 200px;}
+90%{left: 1250px; top: 300px;transform: scale(0.8);}   
+98%{left: 1400px; top: 300px;transform: scale(0.5);}
+100%{left:1430px; top: 300px;transform: scale(0);}}
+
+.babohka {position: absolute;
+  width: 50px;
+  animation: Huk 3s linear 0s infinite alternate;}
+
+.motulek {position: absolute;
+  width: 50px;
+  animation: bird 5s linear 0s infinite alternate;}
+
+@keyframes Huk {
+  0% {
+    left: -100px;
+    top: 400px;
+  }
+  50% {
+    left:1000px;
+    top: 300px;
+  }
+  70% {
+    left: 1200px;
+    top: 400px;
+    transform: scale(0.7);
+  }
+  85% {
+    left: 1400px;
+    top: 300px;
+    transform: scale(0.5);
+  }
+  100% {
+    left: 1470px;
+    top: 200px;
+    transform: scale(0);
+  }}
+
+.cepdehko{width: 220px;
+  position: absolute;
+  left: 45%;
+  top: 65%;
+  animation-name: heartBeat;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+animation-timing-function: ease-in-out; }
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.1);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.1);
+  }
+
+  70% {
+    transform: scale(1);
+  }}
+.ALINA {width: 100px;
+  border-radius: 50%;    
+  position: absolute;
+  left: 65%; top: 55%;
+  transition: 3s;transform: scale(2);}

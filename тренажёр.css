@@ -1,0 +1,206 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+}
+.fas {
+  color: yellow;
+  font-size: 55px;
+  position: absolute;
+}
+input[type="checkbox"] {
+  position: absolute;
+  visibility: hidden;
+  left: -999999px;
+}
+.zemlya {
+  counter-reset: count;
+  position: relative;
+}
+@keyframes ogony {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+.lampa1 {
+  left: 5vw;
+  top: 10vh;
+  animation: show 1s ease 19s both; 
+}
+.lampa2 {
+  left: 95vw;
+  top: 10vh;
+  animation: show 1s linear 20s both ; 
+}
+.lampa3 {
+  left: 5vw;
+  top: 90vh;
+  animation: show 1s linear 21s both ;
+}
+.lampa4 {
+  left: 95vw;
+  top: 90vh;
+  animation: show 1s linear 22s both ;
+}
+.lampa11 {
+  left: 5vw;
+  top: 10vh;
+  animation: show 1s ease 7s both; 
+}
+.lampa22 {
+  left: 95vw;
+  top: 10vh;
+  animation: show 1s linear 8s both ; 
+}
+.lampa33 {
+  left: 5vw;
+  top: 90vh;
+  animation: show 1s linear 9s both ;
+}
+.lampa44 {
+  left: 95vw;
+  top: 90vh;
+  animation: show 1s linear 10s both ;
+}
+
+.lampa111 {
+  left: 5vw;
+  top: 10vh;
+  animation: show 1s ease 11s both; 
+}
+.lampa222 {
+  left: 95vw;
+  top: 10vh;
+  animation: show 1s linear 12s both ; 
+}
+.lampa333 {
+  left: 5vw;
+  top: 90vh;
+  animation: show 1s linear 13s both ;
+}
+.lampa444 {
+  left: 95vw;
+  top: 90vh;
+  animation: show 1s linear 14s both ;
+}
+.lampa1111 {
+  left: 5vw;
+  top: 10vh;
+  animation: show 1s ease 15s both; 
+}
+.lampa2222 {
+  left: 95vw;
+  top: 10vh;
+  animation: show 1s linear 16s both ; 
+}
+.lampa3333 {
+  left: 5vw;
+  top: 90vh;
+  animation: show 1s linear 17s both ;
+}
+.lampa4444 {
+  left: 95vw;
+  top: 90vh;
+  animation: show 1s linear 18s both ;
+}
+
+.AAA{position: absolute;
+    top:400px; left:-200px;
+    
+    font-size:32px;
+    color:bisque;  transform: skew(0deg, -20deg) scale(.8) translateX(50%);
+animation: privet 12s linear 23s both;}
+
+@keyframes privet {0% {opacity: 0;}
+                   75%{opacity: 1}
+                 100% {opacity: 0;}}
+    
+.BBB{position: absolute;
+    top:350px; left:550px;
+    font-size:26px;color:bisque;
+animation: noka 3s linear 8s both;}
+
+@keyframes noka {0% {opacity: 1;}
+                 100% {opacity: 0;}}
+
+
+.tapelka {position: absolute;
+    top:10px; left:-150px;
+    width: 100px;
+    animation: NLO 1.5s linear 34s 10;}
+
+.cpytnik {position: absolute;
+    top:300px; left:-300px;
+    width: 195px;}
+
+@keyframes NLO
+{0% {left: -10px; top:-10px;}
+50% {left: 750px; top: 650px;transform: scale(0.5);}
+90%{left: 1350px; top: 50px;transform: scale(0.8);}   
+98%{left: 1400px; top: 10px;transform: scale(0.5);}
+100%{left:1440px; top: 5px;transform: scale(0);}}
+
+
+h3{position: absolute; left: 500px; top: 200px;color: bisque; transform: scale(1.5); animation: privet 12s linear 50s both;}
+
+@keyframes Huk {
+  0% {
+    left: -10px;
+    top: 300px;
+  }
+  90% {
+    left: 1350px;
+    top: 300px;
+    transform: scale(0.7);
+  }
+  95% {
+    left: 1380px;
+    top: 300px;
+    transform: scale(0.5);
+  }
+  100% {
+    left: 1430px;
+    top: 300px;
+    transform: scale(0);
+  }
+}
+
+input[type="checkbox"]:checked + .fas {
+  animation: ogony 2s linear both;
+    color: orangered;}
+
+input[type="checkbox"]:checked ~ .cpytnik{
+  position: absolute;
+  animation: Huk 1.5s linear 0s 10 normal;}
+
+p{position: absolute;left:600px;top:300px;
+animation: privet 10s linear 77s both; transform: scale(3);color:bisque;}
+
+/*#switter {
+  position: absolute;
+  left: -999999px;
+visibility: hidden;}
+
+
+#switter:checked ~ .babohka{
+  position: absolute;
+  animation: Huk 8s linear 0s 1 alternate;
+}*/
